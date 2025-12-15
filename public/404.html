@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SWAPP</title>
+        <script>
+            // Redirect to index.html with the path as hash for SPA routing
+            var path = window.location.pathname;
+            var search = window.location.search;
+            var hash = window.location.hash;
+            window.location.replace(
+                "/Swapp-app/#" + path.replace("/Swapp-app", "") + search + hash,
+            );
+        </script>
+    </head>
+    <body>
+        <p>Redirecting...</p>
+    </body>
+</html>

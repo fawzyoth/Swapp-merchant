@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* QR Scanner video styles */
+#qr-reader {
+  width: 100%;
+  min-height: 300px;
+}
+
+#qr-reader video {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 8px;
+}
+
+#qr-reader__scan_region {
+  min-height: 250px;
+}
+
+#qr-reader__scan_region video {
+  object-fit: cover;
+}
